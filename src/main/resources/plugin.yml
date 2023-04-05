@@ -1,0 +1,4 @@
+name: Heads
+version: '${project.version}'
+main: fbhosting.net.heads.Heads
+api-version: 1.19
