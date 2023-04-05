@@ -1,4 +1,32 @@
 name: Heads
+description: A Minecraft Plugin that gives you a players head.
 version: '${project.version}'
-main: fbhosting.net.heads.Heads
+
+author: Flashbang Hosting
+website: https://fb-hosting.net/
+
+main: net.fbhosting.heads.Heads
 api-version: 1.19
+
+depend:
+  - LuckPerms
+
+commands:
+  head:
+    aliases: [kopf]
+    description: Teleport to the specified farming world.
+    usage: /<command> [player]
+
+permissions:
+  heads.*:
+    description: Gives full access to the plugin.
+    default: op
+    children:
+      head.spawn: true
+      head.bypass: true
+  head.spawn:
+    description: Gives you a Players Head.
+    default: true
+  head.bypass:
+    description: Bypasses the heads timeout.
+    default: op

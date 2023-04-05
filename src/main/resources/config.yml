@@ -1,0 +1,6 @@
+general:
+  timeout: 100
+  lang: "de"
+
+head:
+  roleUpwards: "moderator"
