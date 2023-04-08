@@ -1,23 +1,23 @@
 # Introduction 
-Heads is a Minecraft Plugin that gives you a head of an player.
+Heads is a Minecraft Plugin that gives you a head of a player.
 
 # Commands
 * **/head \<player\>**, **/skull \<player\>** <br>
    Gives you the players head.
 
 # Permissions
-This is a quick overview which may be out of date. Please checkout all permissions at [src/main/resources/plugin.yml](src/main/resources/plugin.yml).
+This is a quick overview which may be out of date. Please check out all permissions at [src/main/resources/plugin.yml](src/main/resources/plugin.yml).
 
-- **heads.\*** <br>
+- <b>heads.\*</b> <br>
    Gives full access to the plugin.
 
-- **heads.spawn** <br>
+- <b>heads.spawn</b> <br>
    Gives you a Players Head.
 
-- **heads.bypass** <br>
+- <b>heads.bypass</b> <br>
    Bypasses the heads timeout.
 
-- **heads.group.\*** (heads.group.admin, heads.group.moderator, ...) <br>
+- <b>heads.group.\*</b> (heads.group.admin, heads.group.moderator, ...) <br>
    Allows you to get the head of a player in this group.
 
 # Localizing

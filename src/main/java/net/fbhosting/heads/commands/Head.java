@@ -44,6 +44,7 @@ public class Head implements CommandExecutor, TabCompleter {
         // only allow commands from players
         if (!(sender instanceof Player player)) return false;
 
+
         // show usage if missing arguments
         if (args.length < 1) return false;
 
@@ -102,7 +103,8 @@ public class Head implements CommandExecutor, TabCompleter {
             player.getInventory().addItem(playerHead);
         }
 
-        player.sendMessage(this.config.getString("locale.success", "Congrats, you got the head of {player}."));
+        String resultText = this.config.getString("locale.success", "Congrats, you got the head of {player}.");
+        player.sendMessage(resultText.replace("{player}", target.getName()));
         return true;
     }
 
