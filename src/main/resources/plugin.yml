@@ -5,7 +5,7 @@ version: '${project.version}'
 author: Flashbang Hosting
 website: https://fb-hosting.net/
 
-main: net.fbhosting.heads.Heads
+main: net.fbhosting.heads.HeadsPlugin
 api-version: 1.19
 
 depend:
@@ -13,7 +13,6 @@ depend:
 
 commands:
   head:
-    aliases: [kopf]
     description: Teleport to the specified farming world.
     usage: /<command> [player]
 
@@ -22,11 +21,15 @@ permissions:
     description: Gives full access to the plugin.
     default: op
     children:
-      head.spawn: true
-      head.bypass: true
-  head.spawn:
+      heads.spawn: true
+      heads.bypass: true
+      heads.group.*: true
+  heads.spawn:
     description: Gives you a Players Head.
     default: true
-  head.bypass:
+  heads.bypass:
     description: Bypasses the heads timeout.
     default: op
+  heads.group.*:
+    description: Allows you to get the head of a player in this group.
+    default: true

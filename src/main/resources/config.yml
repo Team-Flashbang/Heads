@@ -1,6 +1,13 @@
 general:
   timeout: 100
-  lang: "de"
 
-head:
-  roleUpwards: "moderator"
+aliases:
+  head:
+    - skull
+
+locale:
+  missingPermission: "You are lacking the required permission to run this command."
+  playerNotFound: "Failed to find player. Please try something else."
+  notPermitted: "You are not allowed to get the head of this player."
+  timeout: "You need to wait {seconds} seconds before using this command again."
+  success: "Congrats, you got the head of {player}."
