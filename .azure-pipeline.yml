@@ -37,6 +37,7 @@ jobs:
           echo "##vso[task.setvariable variable=projectVersion]$detectedVersion"
         displayName: Detect Project Version
       - script: |
+          mvn versions:set -D"newVersion=$(projectVersion)"
           mvn deploy
         displayName: Deploy Artifacts
       - script: |
